@@ -11,7 +11,7 @@ import router from './routes/todo_routes.js';
 const app = express();
 
 const options = {
-    origin: ['localhost:3000', 'todo-list-web-project.netlify.app/']
+    origin: ['localhost:3000', 'https://todo-list-web-project.netlify.app/']
 }
 
 // MIDDLEWARES
