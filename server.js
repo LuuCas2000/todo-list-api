@@ -10,14 +10,12 @@ import router from './routes/todo_routes.js';
 
 const app = express();
 
-const options = {
-    origin: ['localhost:3000', 'https://todo-list-web-project.netlify.app/']
-}
-
 // MIDDLEWARES
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors(options));
+app.use(cors({
+    origin: 'https://todo-list-web-project.netlify.app/'
+}));
 
 // DATABASE
 export const pool = mysql.createPool({
