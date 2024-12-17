@@ -13,9 +13,7 @@ const app = express();
 // MIDDLEWARES
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({
-    origin: 'https://todo-list-web-project.netlify.app/'
-}));
+app.use(cors());
 
 // DATABASE
 export const pool = mysql.createPool({
