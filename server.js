@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://todo-list-web-project.netlify.app']
+    origin: ['http://localhost:5173', 'https://todo-list-web-project.netlify.app']
 }));
 
 // DATABASE
